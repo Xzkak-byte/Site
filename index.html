@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>JavaScript Learning</title>
+    <meta charset="utf-8">
+    <meta name="author" content="person">
+    <meta name="keywords" content="learning">
+    <link rel="icon" href="/image.png" type="image/png">
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+    <button id="dark-mode-toggle">Тёмный режим</button>
+    <form id="main-form" method="post">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" placeholder="Введите имя" id="name">
+        <label for="email">Почта:</label>
+        <input type="email" name="email" id="email" placeholder="Введите email">
+        <label for="password">Создайте пароль:</label>
+        <input type="password" name="password" id="password" placeholder="Введите пароль">
+        <label for="password2">Подтвердите пароль:</label>
+        <input type="password" name="copypass" id="copypass" placeholder="Повторите пароль">
+        <label>Ваш пол:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="Мужской"> Мужской</label>
+            <label><input type="radio" name="gender" value="Женский"> Женский</label>
+        </div>        
+        <input type="submit" value="Готово" name="submit">
+        <div id="warning" class="warning"></div> 
+    </form>
+    <script>
+        document.getElementById('name').addEventListener('input', function (e) {
+    this.value = this.value.replace(/[^a-zA-Z]/g, '');}) 
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
