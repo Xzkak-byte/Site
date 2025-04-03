@@ -12,6 +12,11 @@ body {
 }
 
 form {
+    width: 90%; 
+    max-width: 450px; 
+}
+
+form {
     background-color: white;
     border-radius: 25px;
     padding: 40px 50px;
